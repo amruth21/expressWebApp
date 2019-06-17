@@ -15,6 +15,10 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/src/pages/index.html'))
 })
 
+app.get('/about', function(req, res){
+    res.sendFile(path.join(__dirname, '/src/pages/about.html'))
+})
+
 app.listen(port, function () {
     console.log('Server running on http://localhost:' + port);
 })
